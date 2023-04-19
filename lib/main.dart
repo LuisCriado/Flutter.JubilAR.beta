@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jobato/routes/app_routes.dart';
 
 import 'screens/screens.dart';
-
-
-
-
-
 
 void main() => runApp(const MyApp());
 
@@ -15,13 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Peliculas',
-      debugShowCheckedModeBanner: false,
-      initialRoute: 'home',
-      routes: {
-        'home': (_) => const InicioScreen(),
-        'details' : (_) => const ServiciosScreen(),
-      },
-    );
+        title: 'JubilAR',
+        debugShowCheckedModeBanner: false,
+        initialRoute: AppRoutes.inicialRoute,
+        routes: AppRoutes.routes);
   }
 }
