@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../screens/screens.dart';
 
 class AppRoutes {
-  static const inicialRoute = 'contacto';
+  static const inicialRoute = 'home';
 
   static Map<String, Widget Function(BuildContext)> routes = {
     'home': (BuildContext context) => const InicioScreen(),

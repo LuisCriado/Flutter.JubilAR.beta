@@ -6,6 +6,9 @@ class ContactoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('gola'),
+      ),
       body: Container(
         child: const Center(
           child: Text('ContactoScreen'),
