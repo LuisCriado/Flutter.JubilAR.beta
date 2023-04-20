@@ -7,6 +7,7 @@ class AppTheme {
   static const Color peligro = Colors.red;
   static const Color cuidado = Colors.yellow;
   static const Color tema =  Color(0xff50C2DD);
+  static const Color azul =  Color.fromARGB(255, 12, 60, 141);
     static const Color subtitulos = Color.fromARGB(255, 77, 77, 77);
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(

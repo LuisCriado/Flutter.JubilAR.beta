@@ -7,10 +7,15 @@ class InicioScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: AppTheme.tema,
         body: PageView(
-      scrollDirection: Axis.vertical,
-      children: [Page1(), Page1(), Page1(), Page1()],
-    ));
+          physics: BouncingScrollPhysics(),
+          scrollDirection: Axis.vertical,
+          children: [
+            Page1(),
+            Page2(),
+          ],
+        ));
   }
 }
 
@@ -71,9 +76,31 @@ class Background extends StatelessWidget {
     return Container(
 
         //darck color primario en light tiene q estar en tema
-        color: AppTheme.primario,
+        color: AppTheme.tema,
         height: double.infinity,
         alignment: Alignment.topCenter,
-        child: Image(image: AssetImage('assets/scroll-2.png')));
+        child: Image(image: AssetImage('assets/scroll-1.png')));
+  }
+}
+
+class Page2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: AppTheme.tema,
+      child: Center(
+        child: TextButton(
+            style: TextButton.styleFrom(
+                backgroundColor: AppTheme.azul, shape: StadiumBorder()),
+            onPressed: () {},
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Ingrese',
+                style: TextStyle(color: AppTheme.secundario, fontSize: 30),
+              ),
+            )),
+      ),
+    );
   }
 }

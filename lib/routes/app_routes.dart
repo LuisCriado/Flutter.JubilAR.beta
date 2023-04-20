@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../screens/screens.dart';
 
 class AppRoutes {
-  static const inicialRoute = 'home';
+  static const inicialRoute = 'menu';
 
   static Map<String, Widget Function(BuildContext)> routes = {
     'home': (BuildContext context) => const InicioScreen(),
@@ -10,5 +10,6 @@ class AppRoutes {
     'login': (BuildContext context) => const LoginScreen(),
     'recomendacion': (BuildContext context) => RecomendacionesScreen(),
     'contacto': (BuildContext context) => ContactoScreen(),
+    'menu': (BuildContext context) => MenuScreen(),
   };
 }

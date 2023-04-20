@@ -1,5 +1,7 @@
 
 
+export 'package:jobato/screens/menu_screen.dart';
+
 export 'package:jobato/screens/contactos_screen.dart';
 export 'package:jobato/screens/recomendaciones_screens.dart';
 
