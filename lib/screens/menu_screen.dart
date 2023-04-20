@@ -6,15 +6,17 @@ class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(
-      children: [
-        //fondo de gradientes
-        FondoMenu(),
+      body: Stack(
+        children: [
+          //fondo de gradientes
+          FondoMenu(),
 
-        //el cuerpo de las tarjetas
-        HomeBody()
-      ],
-    ));
+          //el cuerpo de las tarjetas
+          HomeBody()
+        ],
+      ),
+      bottomNavigationBar: BotonNavegacion(),
+    );
   }
 }
 
@@ -27,7 +29,11 @@ class HomeBody extends StatelessWidget {
       child: Column(
         children: [
           // Titutulos
-          TituloMenu()
+          TituloMenu(),
+
+          //las tarjetas
+
+          TarjetasMenu(),
         ],
       ),
     );
